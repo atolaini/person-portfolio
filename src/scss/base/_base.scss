@@ -14,6 +14,7 @@ body {
     box-sizing: border-box;
     font-size: 1.7rem;
     line-height: 1.5;
+    background-color: green;
 }
 
 .container {
@@ -24,4 +25,8 @@ body {
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
 }
