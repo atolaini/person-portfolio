@@ -14,7 +14,9 @@ body {
     box-sizing: border-box;
     font-size: 1.7rem;
     line-height: 1.5;
-    background-color: green;
+    font-family: $fontPrimary;
+    color: $darkGrey;
+    background-color: $lightGrey;
 }
 
 .container {

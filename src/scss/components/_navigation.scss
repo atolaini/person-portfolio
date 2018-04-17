@@ -1,0 +1,40 @@
+.navBar {
+    min-height: 100vh;
+    color: $darkGrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__logo {
+        display: block;
+        text-align: right;
+        padding-right: 2rem;
+        font-size: 4rem;
+        font-family: $headingPrimary;
+        color: inherit;
+        
+    }
+
+    &__nav {
+
+        &--item {
+            text-align: right;
+            padding-right: 2rem;
+        }
+
+        &--item:not(:last-child) {
+            margin-bottom: 1.4rem;
+        }
+
+        &--link {
+            color: inherit;
+        }
+    }
+}
+
+.emailLink {
+    display: block;
+    text-align: right;
+    padding-right: 2rem;
+    color: inherit;
+}
