@@ -50,11 +50,35 @@ a {
     color: inherit; }
   .navBar__nav--item {
     text-align: right;
-    padding-right: 2rem; }
-  .navBar__nav--item:not(:last-child) {
-    margin-bottom: 1.4rem; }
-  .navBar__nav--link {
-    color: inherit; }
+    padding-right: 2rem;
+    position: relative; }
+    .navBar__nav--item:not(:last-child) {
+      margin-bottom: 1.4rem; }
+    .navBar__nav--item::before {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 2px;
+      right: 0;
+      background-color: black;
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      -webkit-transition: width 0.4s 0.3s, -webkit-transform 0.3s cubic-bezier(0.62, 0.01, 0.23, 0.99);
+      transition: width 0.4s 0.3s, -webkit-transform 0.3s cubic-bezier(0.62, 0.01, 0.23, 0.99);
+      transition: transform 0.3s cubic-bezier(0.62, 0.01, 0.23, 0.99), width 0.4s 0.3s;
+      transition: transform 0.3s cubic-bezier(0.62, 0.01, 0.23, 0.99), width 0.4s 0.3s, -webkit-transform 0.3s cubic-bezier(0.62, 0.01, 0.23, 0.99); }
+    .navBar__nav--item:hover::before {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      width: 100%; }
+  .navBar__nav--link, .navBar__nav--link:active, .navBar__nav--link:visited {
+    position: relative;
+    z-index: 10;
+    color: inherit;
+    -webkit-transition: color 0s .3s;
+    transition: color 0s .3s; }
+    .navBar__nav--link:hover, .navBar__nav--link:active:hover, .navBar__nav--link:visited:hover {
+      color: white; }
 
 .emailLink {
   display: block;
@@ -72,4 +96,5 @@ a {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  border-right: 1px solid #262728; }
