@@ -100,6 +100,29 @@ h2 {
       .navBar__nav--link:hover, .navBar__nav--link:link:hover, .navBar__nav--link:visited:hover {
         color: white; }
 
+.skillsCardContainer {
+  border: 2px solid white;
+  height: 50rem;
+  width: 50rem;
+  margin: 0 auto;
+  padding: 2rem;
+  overflow: hidden; }
+  .skillsCardContainer__card {
+    border: 1px solid white;
+    color: white;
+    padding: 1rem;
+    height: 45rem; }
+    .skillsCardContainer__card:not(:last-child) {
+      margin-bottom: 1rem; }
+
+.cardControls {
+  margin: 0 auto;
+  text-align: center; }
+  .cardControls__icon--up, .cardControls__icon--down {
+    fill: white;
+    height: 7rem;
+    width: 7rem; }
+
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,3 +167,9 @@ h2 {
     color: #475258;
     text-align: left;
     margin-bottom: 2rem; }
+
+.skillsSection {
+  min-height: 50vh;
+  background-color: #475258; }
+  .skillsSection__heading {
+    color: white; }
