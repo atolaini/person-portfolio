@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="/dist/css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
     <title>Adam Tolaini | Portfolio</title>
 </head>
 <body>
@@ -50,13 +51,13 @@
                     <h1 class="aboutSection__heading">About Me...</h1>
                     <div class="aboutSection__content">
                         <div class="aboutSection__text">
-                            <p class="aboutSection__text--1">
+                            <p class="aboutSection__text">
                                 Thanks for taking the time to take a look at my site.<br>As you may have already guessed my name is Adam<br> (The long version is Adam Tolaini), and I'm a web developer based in London. <br><br>
                                 After years working in the finance industry I decided to change paths and took what was a hobby and try and turn it into a career. Since leaving the finance industy I have been learning and developing the skills needed to be a modern day developer.
                             </p>
                         </div>
                         <div class="aboutSection__text">
-                            <p class="aboutSection__text--2">
+                            <p class="aboutSection__text">
                                 Currently I specialize in front end development<br> using the latest web technologies to create modern looking websites and web applications. I have worked on freelance projects building and in some cases also designing, modern responsive websites.<br><br>
                                 I am always eager to learn more and expand my skills and currently looking for any junior postions or freelance work.
                             </p>
@@ -70,24 +71,26 @@
                         Skills...
                     </h1>
                    <div class="skillsCardContainer">
-                        <div class="skillsCardContainer__card">
+                        <div class="skillsCardContainer__card" id="card">
                             <h3 class="skillsCardContainer__card--heading">html5</h3>
                             <p class="skillsCardContainer__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ullam ut laboriosam voluptatem fuga atque corrupti maiores iste perferendis quam quis minus dolorum laborum quidem distinctio. Possimus iste doloremque hic?</p>
                         </div>
-                        <div class="skillsCardContainer__card">
+                        <div class="skillsCardContainer__card" id="card">
                             <h3 class="skillsCardContainer__card--heading">html5</h3>
                             <p class="skillsCardContainer__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ullam ut laboriosam voluptatem fuga atque corrupti maiores iste perferendis quam quis minus dolorum laborum quidem distinctio. Possimus iste doloremque hic?</p>
                         </div>
-                        <div class="skillsCardContainer__card">
+                        <div class="skillsCardContainer__card" id="card">
                             <h3 class="skillsCardContainer__card--heading">html5</h3>
                             <p class="skillsCardContainer__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ullam ut laboriosam voluptatem fuga atque corrupti maiores iste perferendis quam quis minus dolorum laborum quidem distinctio. Possimus iste doloremque hic?</p>
                         </div>
                    </div>
                    <div class="cardControls">
-                        <svg class="cardControls__icon--up">
-                            <use xlink:href="img/sprite.svg#icon-chevron-up"></use>
-                        </svg>
-                        <svg class="cardControls__icon--down">
+                       <button id="up">
+                            <svg class="cardControls__icon--up">
+                                <use xlink:href="img/sprite.svg#icon-chevron-up"></use>
+                            </svg>
+                       </button>
+                        <svg class="cardControls__icon--down" id="down">
                             <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
                         </svg>
                     </div>   
@@ -96,5 +99,7 @@
             <div style="height: 2000px"></div>
         </main>
     </div> <!--end of content container-->
+
+    <script src="./scripts/app.js"></script>    
 </body>
 </html>

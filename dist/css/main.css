@@ -105,13 +105,14 @@ h2 {
   height: 50rem;
   width: 50rem;
   margin: 0 auto;
-  padding: 2rem;
-  overflow: hidden; }
+  padding: 2rem; }
   .skillsCardContainer__card {
     border: 1px solid white;
     color: white;
     padding: 1rem;
-    height: 45rem; }
+    height: 45rem;
+    width: 45rem;
+    background-color: lightcoral; }
     .skillsCardContainer__card:not(:last-child) {
       margin-bottom: 1rem; }
 
@@ -122,6 +123,8 @@ h2 {
     fill: white;
     height: 7rem;
     width: 7rem; }
+    .cardControls__icon--up:hover, .cardControls__icon--down:hover {
+      cursor: pointer; }
 
 .content {
   display: -webkit-box;
