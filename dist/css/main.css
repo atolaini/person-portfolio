@@ -112,3 +112,11 @@ h2 {
       -ms-flex: 1;
           flex: 1;
   background-color: yellow; }
+
+.homeSection {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.6)), to(rgba(0, 0, 0, 0.6))), url("/src/img/me.jpg");
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0.6)), url("/src/img/me.jpg");
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 50vh; }

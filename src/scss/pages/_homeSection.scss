@@ -1,0 +1,9 @@
+.homeSection {
+    background-image: 
+        linear-gradient(to right, rgba($white, .6), rgba(black, .6)),
+        url('/src/img/me.jpg');
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 50vh;
+}
