@@ -16,18 +16,22 @@ body {
   line-height: 1.5;
   font-family: Open Sans;
   color: #262728;
-  background-color: #eeee; }
+  background-color: #eaedf2; }
 
 .container {
   width: 100%;
   max-width: 96rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 2rem; }
 
 ul {
   list-style: none; }
 
 a {
   text-decoration: none; }
+
+h1 {
+  font-family: Source Sans Pro; }
 
 .navBar {
   min-height: 100vh;
@@ -86,6 +90,16 @@ a {
   padding-right: 2rem;
   color: inherit; }
 
+.homeSections {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative; }
+
 .homeHeader {
   background-color: white;
   width: 18rem;
@@ -97,4 +111,11 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-right: 1px solid #262728; }
+  border-right: 1px solid #262728;
+  z-index: 20; }
+
+.about {
+  background-image: url("/src/img/me.jpg");
+  height: 75vh;
+  background-position: center left;
+  background-repeat: no-repeat; }
