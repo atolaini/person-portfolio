@@ -1,69 +1,69 @@
 .navBar {
-    min-height: 100vh;
-    color: $darkGrey;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    
+    background-color: $white;
+    flex: 0 0 18rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 18rem;
+    border-right: 2px solid $lightGrey;
 
     &__logo {
-        display: block;
-        padding: 2rem;
-        font-size: 4rem;
-        font-family: $headingPrimary;
-        color: inherit;
-        
-        
+        color: $darkGrey;
+    }
+
+    &__content {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__nav {
+        text-align: center;
+        width: 100%;
+        //padding-right: 2rem;
 
         &--item {
-            text-align: right;
-            padding-right: 2rem;
             position: relative;
+
             &:not(:last-child) {
-                margin-bottom: 1.4rem;
+                margin-bottom: 2rem;
             }
+        }
 
-            &::before {
-                content: '';
-                position: absolute;
-                height: 100%;
-                width: 2px;
-                right: 0;
-                background-color: black;
-                transform: scaleY(0);
-                transition: 
-                    transform .3s cubic-bezier(.62,.01,.23,.99),
-                    width .4s .3s;
-            }
+        &--item:before {
+            content: '';
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            background-color: $darkGrey;
+            transform: scaleY(0);
+            transition: 
+                transform .5s,
+                width .2s .5s;
 
-            &:hover::before {
-                transform: scaleY(1);
-                width: 100%;
-            }
+            
+        }
 
+        &--item:hover::before {
+            transform: scaleY(1);
+            width: 90%;
         }
 
         &--link,
-        &--link:active,
+        &--link:link,
         &--link:visited {
             position: relative;
-            z-index: 10;
-            color: inherit;
-            transition: color 0s .3s;
-
+            z-index: 1;
+            color: $darkGrey;
+            transition-delay: .5s;
             &:hover {
-                color: white;
+                color: $white;
             }
         }
     }
-}
-
-.emailLink {
-    display: block;
-    text-align: right;
-    padding-right: 2rem;
-    color: inherit;
 }

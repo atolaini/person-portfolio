@@ -1,4 +1,9 @@
-.homewrap {
+.content {
     display: flex;
-    min-height: 100vh;
+    margin-left: 18rem;
+}
+
+.siteSections {
+    flex: 1;
+    background-color: yellow;
 }
