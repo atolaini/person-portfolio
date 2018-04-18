@@ -1,0 +1,22 @@
+.aboutSection {
+    min-height: 50vh;
+    background-color: $yellow;
+
+    &__content {
+        display: flex;
+    }
+
+    &__text {
+        width: 50%;
+        //border: 1px solid black;
+        text-align: justify;
+        margin-right: 1rem;
+        padding: 1rem;
+    }
+
+    &__heading {
+        color: $darkGrey;
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+}
