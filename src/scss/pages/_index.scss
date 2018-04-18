@@ -1,10 +1,14 @@
 .homeHeader {
     background-color: $white;
-    width: 18rem;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
+    min-width: 18rem;
     border-right: 1px solid $darkGrey;
-    z-index: 20;
+    position: relative;
+
+    &__content {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+    }
 }
 
