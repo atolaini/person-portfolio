@@ -22,7 +22,7 @@ body {
   width: 100%;
   max-width: 96rem;
   margin: 0 auto;
-  padding: 2rem; }
+  padding: 3rem; }
 
 ul {
   list-style: none; }
@@ -32,12 +32,11 @@ a {
 
 h1 {
   font-family: Source Sans Pro;
-  font-size: 5rem; }
+  font-size: 7rem; }
 
 h2 {
   font-family: Open Sans;
-  font-weight: normal;
-  font-size: 2rem; }
+  font-weight: normal; }
 
 .navBar {
   background-color: white;
@@ -119,4 +118,12 @@ h2 {
   background-size: inherit;
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
   height: 50vh; }
+  .homeSection__content {
+    margin-top: 5rem;
+    color: white; }
+    .homeSection__content--heading {
+      font-size: 7rem; }
+    .homeSection__content--subHeading {
+      font-size: 3.5rem; }
