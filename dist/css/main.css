@@ -102,14 +102,24 @@ h2 {
 
 .slider {
   border: 1px solid white;
-  height: 30rem;
-  padding: 2rem; }
+  height: 40rem;
+  width: 40rem;
+  padding: 1rem;
+  margin: 0 auto;
+  position: relative; }
 
 .mySlides {
   color: white;
   border: 1px solid white;
-  width: 15rem;
-  margin: 0 auto; }
+  width: 37rem;
+  height: 37rem;
+  padding: 1rem;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 .cardControls {
   margin: 0 auto;
@@ -120,6 +130,12 @@ h2 {
     width: 7rem; }
     .cardControls__icon--up:hover, .cardControls__icon--down:hover {
       cursor: pointer; }
+
+.sliderBtn {
+  background-color: transparent;
+  border: none; }
+  .sliderBtn:focus {
+    outline: none; }
 
 .content {
   display: -webkit-box;
