@@ -83,10 +83,10 @@ h2 {
       background-color: #475258;
       -webkit-transform: scaleY(0);
               transform: scaleY(0);
-      -webkit-transition: width .2s .5s, -webkit-transform .5s;
-      transition: width .2s .5s, -webkit-transform .5s;
-      transition: transform .5s, width .2s .5s;
-      transition: transform .5s, width .2s .5s, -webkit-transform .5s; }
+      -webkit-transition: width 0.2s cubic-bezier(1, 0, 0.28, 1) 0.3s, -webkit-transform 0.3s;
+      transition: width 0.2s cubic-bezier(1, 0, 0.28, 1) 0.3s, -webkit-transform 0.3s;
+      transition: transform 0.3s, width 0.2s cubic-bezier(1, 0, 0.28, 1) 0.3s;
+      transition: transform 0.3s, width 0.2s cubic-bezier(1, 0, 0.28, 1) 0.3s, -webkit-transform 0.3s; }
     .navBar__nav--item:hover::before {
       -webkit-transform: scaleY(1);
               transform: scaleY(1);
@@ -95,8 +95,8 @@ h2 {
       position: relative;
       z-index: 1;
       color: #475258;
-      -webkit-transition-delay: .5s;
-              transition-delay: .5s; }
+      -webkit-transition-delay: .4s;
+              transition-delay: .4s; }
       .navBar__nav--link:hover, .navBar__nav--link:link:hover, .navBar__nav--link:visited:hover {
         color: white; }
 

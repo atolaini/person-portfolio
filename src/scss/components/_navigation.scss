@@ -43,8 +43,8 @@
             background-color: $darkGrey;
             transform: scaleY(0);
             transition: 
-                transform .5s,
-                width .2s .5s;
+                transform  .3s, 
+                width .2s cubic-bezier(1,0,.28,1) .3s;
 
             
         }
@@ -60,7 +60,7 @@
             position: relative;
             z-index: 1;
             color: $darkGrey;
-            transition-delay: .5s;
+            transition-delay: .4s;
             &:hover {
                 color: $white;
             }
