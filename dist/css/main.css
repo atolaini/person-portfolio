@@ -100,36 +100,63 @@ h2 {
       .navBar__nav--link:hover, .navBar__nav--link:link:hover, .navBar__nav--link:visited:hover {
         color: white; }
 
+.emailLink {
+  margin-bottom: 5px;
+  color: #475258; }
+
 .slider {
-  border: 1px solid white;
-  height: 40rem;
-  width: 40rem;
+  border: 1px solid #eaedf2;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 45rem;
+  max-width: 40rem;
   padding: 1rem;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  z-index: 200;
+  -webkit-box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
 
 .mySlides {
-  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eaedf2), to(white));
+  background-image: linear-gradient(to bottom, #eaedf2, white);
+  color: #475258;
   border: 1px solid white;
-  width: 37rem;
-  height: 37rem;
+  min-width: 37rem;
+  height: 38rem;
   padding: 1rem;
-  position: absolute;
+  position: relative;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
+  .mySlides__heading {
+    text-align: center;
+    margin-bottom: 1rem; }
+  .mySlides__text {
+    text-align: center; }
+  .mySlides__logo {
+    text-align: center;
+    margin: 1rem 0; }
+    .mySlides__logo--img {
+      width: 10rem; }
 
 .cardControls {
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  z-index: 200; }
   .cardControls__icon--up, .cardControls__icon--down {
     fill: white;
     height: 7rem;
     width: 7rem; }
     .cardControls__icon--up:hover, .cardControls__icon--down:hover {
       cursor: pointer; }
+  .cardControls__btn {
+    background: none;
+    border: none; }
+    .cardControls__btn:focus {
+      outline: none; }
 
 .sliderBtn {
   background-color: transparent;
@@ -187,7 +214,9 @@ h2 {
   background-color: #475258;
   overflow: hidden; }
   .skillsSection__heading {
-    color: white; }
+    color: white;
+    position: relative;
+    z-index: 200; }
 
 .videoWrap {
   position: absolute;

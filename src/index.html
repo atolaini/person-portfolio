@@ -41,16 +41,16 @@
                 <div class="container">
                     <div class="homeSection__content">
                         <h1 class="homeSection__content--heading">Hello, I'm Adam...</h1>
-                        <h2 class="homeSection__content--subHeading">and this is me...</h2>
+                        <h2 class="homeSection__content--subHeading">and this is...</h2>
                     </div>
                 </div>
             </section>
             <section class="aboutSection">
                 <div class="container">
-                    <h1 class="aboutSection__heading">About Me...</h1>
+                    <h1 class="aboutSection__heading">A little about Me...</h1>
                     <div class="aboutSection__content">
                         <div class="aboutSection__text">
-                            <p class="aboutSection__text">
+                            <p class="aboutSection__text--2">
                                 Thanks for taking the time to take a look at my site. As you may have already guessed my name is Adam (The long version is Adam Tolaini), and I'm a web developer based in London. <br><br>
                                 After years working in the finance industry I decided to change paths and took what was a hobby and try and turn it into a career. Since leaving the finance industy I have been learning and developing the skills needed to be a modern day developer.
                             </p>
@@ -66,44 +66,66 @@
             </section>
             <section class="skillsSection">
                     <div class="videoWrap">
-                        <video src="/src/img/code.mp4" class="videoBg" autoplay="true"></video>
+                        <video src="/src/img/code.mp4" class="videoBg" autoplay="true" controls loop></video>
                     </div>
                     <div class="videoOverlay"></div>
                 <div class="container">
                     <h1 class="skillsSection__heading">
-                        Skills...
+                        My skills...
                     </h1>
                     <div class="slider">
                         <div class="mySlides">
+                            <div class="mySlides__logo">
+                                <img src="/src/img/html-logo.png" alt="" class="mySlides__logo--img">
+                            </div>
                             <h3 class="mySlides__heading">HTML5</h3>
-                            <p class="mySlides__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores possimus cumque nam explicabo fugiat doloremque accusantium expedita magni consequatur rem. Illo ut, rem cupiditate iusto saepe numquam animi. Cumque, aliquam.</p>
+                            <p class="mySlides__text">To be good at anything you first have to understand the foundations. As a web developer I have a complete understanding of how to write clean HTML using the BEM method to create readable and understandable code.</p>
                         </div>
                         <div class="mySlides">
+                            <div class="mySlides__logo">
+                                <img src="/src/img/css-logo.png" alt="" class="mySlides__logo--img">
+                            </div>
                             <h3 class="mySlides__heading">CSS</h3>
-                            <p class="mySlides__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores possimus cumque nam explicabo fugiat doloremque accusantium expedita magni consequatur rem. Illo ut, rem cupiditate iusto saepe numquam animi. Cumque, aliquam.</p>
+                            <p class="mySlides__text">Like HTML, CSS being one of the building blocks of web development I have taken the time to learn the code fully, understanding about the use of classes, psuedo classes, animations ect, all the things to makes a beautiful website or application.</p>
                         </div>
                         <div class="mySlides">
+                            <div class="mySlides__logo">
+                                <img src="/src/img/sass-logo.png" alt="" class="mySlides__logo--img">
+                            </div>
                             <h3 class="mySlides__heading">SASS</h3>
-                            <p class="mySlides__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores possimus cumque nam explicabo fugiat doloremque accusantium expedita magni consequatur rem. Illo ut, rem cupiditate iusto saepe numquam animi. Cumque, aliquam.</p>
+                            <p class="mySlides__text">As well as learning standard CSS I have spent alot of time learning advanced CSS and its features such as flexbox and css grid while implementing the pre processor SASS. With it I am used to creating fragmented and resualble code. In conjunction to learning SASS I also have experieence using task runners such as Gulp.</p>
                         </div>
                         <div class="mySlides">
+                            <div class="mySlides__logo">
+                                <img src="/src/img/js-logo.png" alt="" class="mySlides__logo--img">
+                            </div>
                             <h3 class="mySlides__heading">Java Script</h3>
-                            <p class="mySlides__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores possimus cumque nam explicabo fugiat doloremque accusantium expedita magni consequatur rem. Illo ut, rem cupiditate iusto saepe numquam animi. Cumque, aliquam.</p>
+                            <p class="mySlides__text">Again as another foundation to web development I have an understanding of vanilla Java Script and its features.</p>
                         </div>
                         <div class="mySlides">
+                            <div class="mySlides__logo">
+                                <img src="/src/img/react-logo.png" alt="" class="mySlides__logo--img">
+                            </div>
                             <h3 class="mySlides__heading">React JS</h3>
-                            <p class="mySlides__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores possimus cumque nam explicabo fugiat doloremque accusantium expedita magni consequatur rem. Illo ut, rem cupiditate iusto saepe numquam animi. Cumque, aliquam.</p>
+                            <p class="mySlides__text"></p>
+                        </div>
+                        <div class="mySlides">
+                            <div class="mySlides__logo">
+                                <img src="/src/img/wordpress-logo.png" alt="" class="mySlides__logo--img" style="width: 20rem">
+                            </div>
+                            <h3 class="mySlides__heading">Wordpress</h3>
+                            <p class="mySlides__text">As well as creating fully custom coded websites I am also capable of creating sites on Wordpress customzing Wordpress themes for the desired look.</p>
                         </div>
                    </div>
                    <div class="cardControls">
-                       <button id="up" onclick="plusDivs(-1)" class="sliderBtn">
-                            <svg class="cardControls__icon--up">
+                       <button class="cardControls__btn">
+                            <svg class="cardControls__icon--up" onclick="plusDivs(-1)">
                                 <use xlink:href="img/sprite.svg#icon-chevron-up"></use>
                             </svg>
                        </button>
-                       <button id="down" onclick="plusDivs(1)" class="sliderBtn">
-                            <svg class="cardControls__icon--down" id="down">
-                                <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                       <button class="cardControls__btn">
+                            <svg class="cardControls__icon--down" id="down" onclick="plusDivs(1)">
+                                <use xlink:href="img/sprite.svg#icon-chevron-down" ></use>
                             </svg>
                        </button>
                     </div>   
