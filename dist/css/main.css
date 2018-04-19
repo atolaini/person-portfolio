@@ -173,7 +173,6 @@ h2 {
     display: -ms-flexbox;
     display: flex; }
   .aboutSection__text {
-    width: 50%;
     text-align: justify;
     margin-right: 1rem;
     padding: 1.5rem; }
