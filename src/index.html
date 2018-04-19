@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="/dist/css/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
     <title>Adam Tolaini | Portfolio</title>
 </head>
 <body>
@@ -70,29 +69,28 @@
                     <h1 class="skillsSection__heading">
                         Skills...
                     </h1>
-                   <div class="skillsCardContainer">
-                        <div class="skillsCardContainer__card" id="card">
-                            <h3 class="skillsCardContainer__card--heading">html5</h3>
-                            <p class="skillsCardContainer__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ullam ut laboriosam voluptatem fuga atque corrupti maiores iste perferendis quam quis minus dolorum laborum quidem distinctio. Possimus iste doloremque hic?</p>
+                    <div class="slider">
+                        <div class="mySlides">
+                            hello
                         </div>
-                        <div class="skillsCardContainer__card" id="card">
-                            <h3 class="skillsCardContainer__card--heading">html5</h3>
-                            <p class="skillsCardContainer__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ullam ut laboriosam voluptatem fuga atque corrupti maiores iste perferendis quam quis minus dolorum laborum quidem distinctio. Possimus iste doloremque hic?</p>
+                        <div class="mySlides">
+                            hello2
                         </div>
-                        <div class="skillsCardContainer__card" id="card">
-                            <h3 class="skillsCardContainer__card--heading">html5</h3>
-                            <p class="skillsCardContainer__card--text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, ullam ut laboriosam voluptatem fuga atque corrupti maiores iste perferendis quam quis minus dolorum laborum quidem distinctio. Possimus iste doloremque hic?</p>
+                        <div class="mySlides">
+                            hello3
                         </div>
                    </div>
                    <div class="cardControls">
-                       <button id="up">
+                       <button id="up" onclick="plusDivs(-1)">
                             <svg class="cardControls__icon--up">
                                 <use xlink:href="img/sprite.svg#icon-chevron-up"></use>
                             </svg>
                        </button>
-                        <svg class="cardControls__icon--down" id="down">
-                            <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
-                        </svg>
+                       <button id="down" onclick="plusDivs(1)">
+                            <svg class="cardControls__icon--down" id="down">
+                                <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                            </svg>
+                       </button>
                     </div>   
                 </div>
             </section>
