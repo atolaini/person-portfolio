@@ -6,6 +6,8 @@
 
     &__heading {
         color: $white;
+        position: relative;
+        z-index: 200;
     }
 }
 

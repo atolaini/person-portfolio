@@ -1,26 +1,50 @@
 .slider {
-    border: 1px solid white;
+    border: 1px solid $lightGrey;
+    background-color: rgba($black, .2);
     height: 40rem;
-    width: 40rem;
+    max-width: 40rem;
     padding: 1rem;
     margin: 0 auto;
     position: relative;
+    z-index: 200;
+    box-shadow:  0 2rem 6rem rgba($black, .3);
 }
 
 .mySlides {
-    color: white;
+    background-image: linear-gradient(to bottom, $lightGrey, $white);
+    color: $darkGrey;
     border: 1px solid white;
-    width: 37rem;
+    min-width: 37rem;
     height: 37rem;
     padding: 1rem;
-    position: absolute;
+    position: relative;
     @include abs-center;
+
+    &__heading {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        text-align: justify;
+    }
+
+    &__logo {
+        text-align: center;
+        margin: 1rem 0;
+
+        &--img {
+            width: 10rem;
+        }
+    }
 }
 
 
 .cardControls {
     margin: 0 auto;
     text-align: center;
+    position: relative;
+    z-index: 200;
 
     &__icon--up,
     &__icon--down {
@@ -29,6 +53,14 @@
         width: 7rem;
         &:hover {
             cursor: pointer;
+        }
+    }
+
+    &__btn {
+        background: none;
+        border: none;
+        &:focus {
+            outline: none;
         }
     }
 }

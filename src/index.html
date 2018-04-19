@@ -50,7 +50,7 @@
                     <h1 class="aboutSection__heading">About Me...</h1>
                     <div class="aboutSection__content">
                         <div class="aboutSection__text">
-                            <p class="aboutSection__text">
+                            <p class="aboutSection__text--2">
                                 Thanks for taking the time to take a look at my site. As you may have already guessed my name is Adam (The long version is Adam Tolaini), and I'm a web developer based in London. <br><br>
                                 After years working in the finance industry I decided to change paths and took what was a hobby and try and turn it into a career. Since leaving the finance industy I have been learning and developing the skills needed to be a modern day developer.
                             </p>
@@ -66,7 +66,7 @@
             </section>
             <section class="skillsSection">
                     <div class="videoWrap">
-                        <video src="/src/img/coding.mp4" class="videoBg" autoplay="true"></video>
+                        <video src="/src/img/code.mp4" class="videoBg" autoplay="true" controls loop></video>
                     </div>
                     <div class="videoOverlay"></div>
                 <div class="container">
@@ -75,35 +75,57 @@
                     </h1>
                     <div class="slider">
                         <div class="mySlides">
+                            <div class="mySlides__logo">
+                                <img src="http://fillmurray.com/200/200" alt="" class="mySlides__logo--img">
+                            </div>
                             <h3 class="mySlides__heading">HTML5</h3>
                             <p class="mySlides__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores possimus cumque nam explicabo fugiat doloremque accusantium expedita magni consequatur rem. Illo ut, rem cupiditate iusto saepe numquam animi. Cumque, aliquam.</p>
                         </div>
                         <div class="mySlides">
+                            <div class="mySlides__logo">
+                                <img src="http://fillmurray.com/200/200" alt="" class="mySlides__logo--img">
+                            </div>
                             <h3 class="mySlides__heading">CSS</h3>
                             <p class="mySlides__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores possimus cumque nam explicabo fugiat doloremque accusantium expedita magni consequatur rem. Illo ut, rem cupiditate iusto saepe numquam animi. Cumque, aliquam.</p>
                         </div>
                         <div class="mySlides">
+                            <div class="mySlides__logo">
+                                <img src="/src/img/sass-logo.png" alt="" class="mySlides__logo--img">
+                            </div>
                             <h3 class="mySlides__heading">SASS</h3>
                             <p class="mySlides__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores possimus cumque nam explicabo fugiat doloremque accusantium expedita magni consequatur rem. Illo ut, rem cupiditate iusto saepe numquam animi. Cumque, aliquam.</p>
                         </div>
                         <div class="mySlides">
+                            <div class="mySlides__logo">
+                                <img src="http://fillmurray.com/200/200" alt="" class="mySlides__logo--img">
+                            </div>
                             <h3 class="mySlides__heading">Java Script</h3>
                             <p class="mySlides__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores possimus cumque nam explicabo fugiat doloremque accusantium expedita magni consequatur rem. Illo ut, rem cupiditate iusto saepe numquam animi. Cumque, aliquam.</p>
                         </div>
                         <div class="mySlides">
+                            <div class="mySlides__logo">
+                                <img src="/src/img/react-logo.png" alt="" class="mySlides__logo--img">
+                            </div>
                             <h3 class="mySlides__heading">React JS</h3>
+                            <p class="mySlides__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores possimus cumque nam explicabo fugiat doloremque accusantium expedita magni consequatur rem. Illo ut, rem cupiditate iusto saepe numquam animi. Cumque, aliquam.</p>
+                        </div>
+                        <div class="mySlides">
+                            <div class="mySlides__logo">
+                                <img src="/src/img/wordpress-logo.png" alt="" class="mySlides__logo--img" style="width: 20rem">
+                            </div>
+                            <h3 class="mySlides__heading">Wordpress</h3>
                             <p class="mySlides__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores possimus cumque nam explicabo fugiat doloremque accusantium expedita magni consequatur rem. Illo ut, rem cupiditate iusto saepe numquam animi. Cumque, aliquam.</p>
                         </div>
                    </div>
                    <div class="cardControls">
-                       <button id="up" onclick="plusDivs(-1)" class="sliderBtn">
-                            <svg class="cardControls__icon--up">
+                       <button class="cardControls__btn">
+                            <svg class="cardControls__icon--up" onclick="plusDivs(-1)">
                                 <use xlink:href="img/sprite.svg#icon-chevron-up"></use>
                             </svg>
                        </button>
-                       <button id="down" onclick="plusDivs(1)" class="sliderBtn">
-                            <svg class="cardControls__icon--down" id="down">
-                                <use xlink:href="img/sprite.svg#icon-chevron-down"></use>
+                       <button class="cardControls__btn">
+                            <svg class="cardControls__icon--down" id="down" onclick="plusDivs(1)">
+                                <use xlink:href="img/sprite.svg#icon-chevron-down" ></use>
                             </svg>
                        </button>
                     </div>   
