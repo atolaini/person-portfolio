@@ -165,6 +165,22 @@ h2 {
     .homeSection__content--subHeading {
       font-size: 3.5rem; }
 
+.aboutSection {
+  min-height: 50vh;
+  background-color: #ffee00; }
+  .aboutSection__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .aboutSection__text {
+    text-align: justify;
+    margin-right: 1rem;
+    padding: 1rem; }
+  .aboutSection__heading {
+    color: #475258;
+    text-align: left;
+    margin-bottom: 2rem; }
+
 .skillsSection {
   min-height: 50vh;
   position: relative;
