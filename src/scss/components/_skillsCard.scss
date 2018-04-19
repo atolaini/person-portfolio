@@ -1,7 +1,7 @@
 .slider {
     border: 1px solid $lightGrey;
     background-color: rgba($black, .2);
-    height: 40rem;
+    height: 45rem;
     max-width: 40rem;
     padding: 1rem;
     margin: 0 auto;
@@ -15,7 +15,7 @@
     color: $darkGrey;
     border: 1px solid white;
     min-width: 37rem;
-    height: 37rem;
+    height: 38rem;
     padding: 1rem;
     position: relative;
     @include abs-center;
@@ -26,7 +26,7 @@
     }
 
     &__text {
-        text-align: justify;
+        text-align: center;
     }
 
     &__logo {
