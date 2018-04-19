@@ -1,8 +1,30 @@
 .skillsSection {
     min-height: 50vh;
+    position: relative;
     background-color: $darkGrey;
+    overflow: hidden;
 
     &__heading {
         color: $white;
     }
 }
+
+.videoWrap {
+    position: absolute;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.videoOverlay {
+    height: 100%;
+    width: 100%;
+    background-color: $darkGrey;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: .6;
+}
+
