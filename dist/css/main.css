@@ -283,3 +283,49 @@ h2 {
 .gridItem--3 {
   grid-row: 3/4;
   grid-column: 3/-1; }
+
+.contactSection {
+  height: auto;
+  color: white;
+  background-color: #475258; }
+  .contactSection__contactWays {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto; }
+    .contactSection__contactWays--item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 2rem; }
+      .contactSection__contactWays--item:not(:last-child) {
+        margin-bottom: 1.5rem; }
+    .contactSection__contactWays--icon {
+      height: 1.7rem;
+      width: 1.7rem;
+      margin-right: 1rem;
+      fill: white; }
+    .contactSection__contactWays--link:link, .contactSection__contactWays--link:visited {
+      color: #eaedf2; }
+
+.contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem 0; }
+
+.legal {
+  text-align: center;
+  margin-top: 7rem;
+  font-size: 1rem; }

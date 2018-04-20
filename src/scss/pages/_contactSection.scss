@@ -1,0 +1,46 @@
+.contactSection {
+    height: auto;
+    color: white;
+    background-color: $darkGrey;
+
+    &__contactWays {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        
+
+        &--item {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            &:not(:last-child) {
+                margin-bottom: 1.5rem;
+            }
+            
+        }
+
+        &--icon {
+            height: 1.7rem;
+            width: 1.7rem;
+            margin-right: 1rem;
+            fill: $white;
+        }
+
+        &--link:link,
+        &--link:visited {
+            color: $lightGrey;
+        }
+    }
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.legal {
+    text-align: center;
+    margin-top: 7rem;
+    font-size: 1rem;
+}
