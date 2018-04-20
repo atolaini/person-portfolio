@@ -21,6 +21,7 @@ body {
     font-family: $fontPrimary;
     color: $darkGrey;
     background-color: $lightGrey;
+    overflow-x: hidden;
 }
 
 .container {

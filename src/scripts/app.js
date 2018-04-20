@@ -55,4 +55,78 @@ $('a[href*="#"]')
   });
 
 
+  //Scroll Reveal effects
+
+  window.sr = ScrollReveal();
+  sr.reveal('.navBar__nav',{
+    origin: 'bottom',
+    duration: 1000,
+    distance: '100px',
+    opacity: 0,
+    easing: 'ease',
+    
+  });
+
+  sr.reveal('.homeSection__content--heading',{
+    origin: 'right',
+    duration: 1000,
+    distance: '500px',
+    opacity: 0,
+    easing: 'ease-out',
+    reset: 'true'
+  });
+
+  sr.reveal('.homeSection__content--subHeading',{
+    duration: 1000,
+    delay: 900,
+    //distance: '500px',
+    opacity: 0,
+    easing: 'ease-out',
+    reset: 'true'
+  });
+
+  sr.reveal('.aboutSection__text', {
+    viewFactor: 0.85,
+    duration: 1200
+  })
+
+  sr.reveal('.skillsSection', {
+    origin: 'bottom',
+    distance: '300px',
+    viewFactor: 0.2,
+    duration: 1200,
+  })
+
+  sr.reveal('.gridItem--3', {
+    duration: 2000,
+    delay: 300,
+    easing: 'ease',
+    //reset: 'true',
+    viewFactor: 1,
+    opacity: 0
+  })
+
+  sr.reveal('.gridItem--2', {
+    duration: 1000,
+    easing: 'ease',
+    //reset: 'true',
+    viewFactor: 1,
+    opacity: 0
+  })
+
+  sr.reveal('.gridItem--1', {
+    duration: 1000,
+    delay: 700,
+    easing: 'ease',
+    //reset: 'true',
+    viewFactor: 1,
+    opacity: 0
+  })
+ 
+
+
+ 
+  
+
+
   

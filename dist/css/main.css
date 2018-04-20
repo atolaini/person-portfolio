@@ -19,7 +19,8 @@ body {
   line-height: 1.5;
   font-family: Open Sans;
   color: #475258;
-  background-color: #eaedf2; }
+  background-color: #eaedf2;
+  overflow-x: hidden; }
 
 .container {
   width: 100%;
@@ -294,9 +295,9 @@ h2 {
 .contactSection {
   height: auto;
   color: white;
-  background-color: #475258; }
+  background-color: #F8DE44; }
   .contactSection__heading {
-    color: #F8DE44; }
+    color: #475258; }
   .contactSection__contactWays {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -309,7 +310,8 @@ h2 {
     border: 1px solid white;
     padding: 4rem;
     -webkit-box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-            box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
+            box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+    background-color: #475258; }
     .contactSection__contactWays--item {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -341,4 +343,5 @@ h2 {
 .legal {
   text-align: center;
   margin-top: 7rem;
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #475258; }
