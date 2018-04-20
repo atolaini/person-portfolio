@@ -6,6 +6,9 @@
   -webkit-box-sizing: inherit;
           box-sizing: inherit; }
 
+*:focus {
+  outline: none; }
+
 html {
   font-size: 62.5%; }
 
@@ -99,6 +102,10 @@ h2 {
               transition-delay: .4s; }
       .navBar__nav--link:hover, .navBar__nav--link:link:hover, .navBar__nav--link:visited:hover {
         color: white; }
+
+.active {
+  color: #ffee00;
+  background-color: #475258; }
 
 .emailLink {
   margin-bottom: 5px;

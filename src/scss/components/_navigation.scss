@@ -52,6 +52,7 @@
         &--item:hover::before {
             transform: scaleY(1);
             width: 90%;
+            
         }
 
         &--link,
@@ -66,6 +67,11 @@
             }
         }
     }
+}
+
+.active {
+    color: $yellow;
+    background-color: $darkGrey;
 }
 
 .emailLink {
