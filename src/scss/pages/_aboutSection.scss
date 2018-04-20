@@ -1,6 +1,8 @@
 .aboutSection {
     min-height: 50vh;
     background-color: $yellow;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
 
     &__content {
         display: flex;

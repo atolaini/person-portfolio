@@ -194,7 +194,9 @@ h2 {
 
 .aboutSection {
   min-height: 50vh;
-  background-color: #ffee00; }
+  background-color: #ffee00;
+  padding-top: 5rem;
+  padding-bottom: 3rem; }
   .aboutSection__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -212,7 +214,9 @@ h2 {
   min-height: 50vh;
   position: relative;
   background-color: #475258;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-top: 5rem;
+  padding-bottom: 3rem; }
   .skillsSection__heading {
     color: white;
     position: relative;
@@ -238,18 +242,19 @@ h2 {
 
 .workSection {
   min-height: 50vh;
-  background-color: white; }
+  background-color: white;
+  padding-top: 5rem; }
   .workSection__heading {
-    margin-bottom: 5rem; }
+    margin-bottom: -20rem; }
 
 .workSectionGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 20rem);
+  grid-template-rows: repeat(5, 20rem);
   grid-gap: 5px; }
 
 .imgContainer {
-  max-width: auto; }
+  max-width: 100%; }
   .imgContainer__img {
     width: 100%;
     height: 100%;
@@ -259,14 +264,22 @@ h2 {
     -webkit-box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
             box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
 
+.gridItem--text {
+  grid-column: 3/5;
+  grid-row: 1/3;
+  padding: 2rem;
+  margin-top: 10rem;
+  margin-left: 1rem;
+  text-align: justify; }
+
 .gridItem--1 {
   grid-column: 1/3;
-  grid-row: 1/3; }
+  grid-row: 2/4; }
 
 .gridItem--2 {
-  grid-row: 3/4;
+  grid-row: 4/5;
   grid-column: 2/4; }
 
 .gridItem--3 {
-  grid-row: 2/3;
+  grid-row: 3/4;
   grid-column: 3/-1; }
