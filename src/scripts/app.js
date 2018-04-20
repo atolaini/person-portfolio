@@ -90,19 +90,19 @@ $('a[href*="#"]')
     duration: 1200
   })
 
-  sr.reveal('.skillsSection', {
-    origin: 'bottom',
-    distance: '300px',
-    viewFactor: 0.2,
-    duration: 1200,
-  })
+  // sr.reveal('.skillsSection', {
+  //   origin: 'bottom',
+  //   distance: '300px',
+  //   viewFactor: 0.2,
+  //   duration: 1200,
+  // })
 
   sr.reveal('.gridItem--3', {
     duration: 2000,
     delay: 300,
     easing: 'ease',
     //reset: 'true',
-    viewFactor: 1,
+    viewFactor: .2,
     opacity: 0
   })
 
@@ -110,7 +110,7 @@ $('a[href*="#"]')
     duration: 1000,
     easing: 'ease',
     //reset: 'true',
-    viewFactor: 1,
+    viewFactor: .2,
     opacity: 0
   })
 
@@ -119,7 +119,7 @@ $('a[href*="#"]')
     delay: 700,
     easing: 'ease',
     //reset: 'true',
-    viewFactor: 1,
+    viewFactor: .2,
     opacity: 0
   })
  
