@@ -104,7 +104,7 @@ h2 {
         color: white; }
 
 .active {
-  color: #ffee00;
+  color: #F8DE44;
   background-color: #475258; }
 
 .emailLink {
@@ -201,7 +201,7 @@ h2 {
 
 .aboutSection {
   min-height: 50vh;
-  background-color: #ffee00;
+  background-color: #F8DE44;
   padding-top: 5rem;
   padding-bottom: 3rem; }
   .aboutSection__content {
@@ -295,6 +295,8 @@ h2 {
   height: auto;
   color: white;
   background-color: #475258; }
+  .contactSection__heading {
+    color: #F8DE44; }
   .contactSection__contactWays {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -303,7 +305,11 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0 auto; }
+    margin: 0 auto;
+    border: 1px solid white;
+    padding: 4rem;
+    -webkit-box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3); }
     .contactSection__contactWays--item {
       display: -webkit-box;
       display: -ms-flexbox;
