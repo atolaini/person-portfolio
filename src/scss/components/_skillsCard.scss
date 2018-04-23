@@ -8,6 +8,13 @@
     position: relative;
     z-index: 200;
     box-shadow:  0 2rem 6rem rgba($black, .3);
+
+    @include respond(phone) {
+        border: none;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
 }
 
 .mySlides {

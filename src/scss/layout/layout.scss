@@ -1,6 +1,10 @@
 .content {
     display: flex;
     margin-left: 18rem;
+
+   @include respond (tab-land) {
+       margin-left: 0;
+   }
 }
 
 .siteSections {

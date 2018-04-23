@@ -54,6 +54,13 @@ $('a[href*="#"]')
     }
   });
 
+  const navigation = document.querySelector('.mobileNavigation')
+  const navCheckbox = navigation.querySelector('.mobileNavigation__checkbox')
+  const navItems = navigation.querySelectorAll('.mobileNavigation__list--item')
+  navItems.forEach(item =>
+      item.addEventListener('click', _ => navCheckbox.checked = false))
+  
+
 
   //Scroll Reveal effects
 

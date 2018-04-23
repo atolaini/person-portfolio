@@ -1,17 +1,21 @@
 .mobileNavigation {
     display: none;
 
+    @include respond(tab-land) {
+         display: block;
+     }
+
     &__checkbox {
         display: none;
     }
 
     &__btn {
         background-color: $white;
-        height: 7rem;
-        width: 7rem;
+        height: 4rem;
+        width: 4rem;
         position: fixed;
-        top: 6rem;
-        right: 6rem;
+        top: 3rem;
+        right: 3rem;
         border-radius: 50%;
         z-index: 2000;
         box-shadow: 0 1rem 3rem rgba($darkGrey, .5);
@@ -21,12 +25,12 @@
     }
 
     &__background {
-        height: 6rem;
-        width: 6rem;
+        height: 3rem;
+        width: 3rem;
         border-radius: 50%;
         position: fixed;
-        top: 6.5rem;
-        right: 6.5rem;
+        top: 3.5rem;
+        right: 3.5rem;
         background-image: radial-gradient( rgba($yellow, .8), rgba($lightGrey, .8) );
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -55,6 +59,8 @@
             &:link,
             &:visited {
                 color: $darkGrey;
+                font-size: 3rem;
+                font-weight: bold;
             }
         }
 
@@ -76,12 +82,12 @@
     
     &__icon {
         position: relative;
-        margin-top: 3.5rem;
+        margin-top: 2rem;
 
         &,
         &::before,
         &::after {
-            width: 3rem;
+            width: 1.5rem;
             height: 2px;
             background-color: $darkGrey;
             display: inline-block;
@@ -95,16 +101,16 @@
             transition: all .2s;
         }
 
-        &::before {top: -.8rem}
-        &::after {top: .8rem}
+        &::before {top: -6px}
+        &::after {top: 6px}
     }
 
     &__btn:hover &__icon::before {
-        top: -1rem;
+        top: -.5rem;
     }
 
     &__btn:hover &__icon::after {
-        top: 1rem;
+        top: .5rem;
     }
 
     &__checkbox:checked + &__btn &__icon {

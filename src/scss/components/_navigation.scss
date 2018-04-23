@@ -9,6 +9,10 @@
     border-right: 1px solid $darkGrey;
     //display: none;
 
+    @include respond(tab-land) {
+        display: none;
+    }
+
     &__logo {
         color: $darkGrey;
     }

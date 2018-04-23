@@ -6,6 +6,10 @@
 
     &__content {
         display: flex;
+
+        @include respond(phone) {
+            display: block;
+        }
     }
 
     &__text {
@@ -18,5 +22,7 @@
         color: $darkGrey;
         text-align: left;
         margin-bottom: 2rem;
+
+        
     }
 }

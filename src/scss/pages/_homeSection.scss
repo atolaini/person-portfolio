@@ -8,17 +8,23 @@
     background-attachment: fixed;
     min-height: 50vh;
 
+     @include respond (tab-port) {
+         text-align: center;
+     }
+
     &__content {
         margin-top: 5rem;
         color: white;
         position: relative;
 
+        
+
         &--heading {
-            font-size: 7rem;
             position: relative;
             z-index: 2;
             text-shadow: 0 2rem 6rem rgba($black, .3);
 
+            
         }
     
         &--subHeading {
@@ -37,6 +43,12 @@
                 font-family: sans-serif;
                 z-index: 1;
                 opacity: .3;
+                font-size: 50rem;
+
+                @include respond(tab-land) {
+                    margin-left: 2rem;
+                    padding-left: 2rem;
+                }
 }
 
 .quoteMarksEnd::after {
@@ -49,5 +61,6 @@
                 font-family: sans-serif;
                 z-index: 3;
                 opacity: .4;
+
     
 }
