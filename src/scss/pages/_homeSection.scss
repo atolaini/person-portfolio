@@ -11,13 +11,43 @@
     &__content {
         margin-top: 5rem;
         color: white;
+        position: relative;
 
         &--heading {
             font-size: 7rem;
+            position: relative;
+            z-index: 2;
+            text-shadow: 0 2rem 6rem rgba($black, .3);
+
         }
     
         &--subHeading {
             font-size: 3.5rem;
         }
     }
+}
+
+.quoteMarksStart::after {
+                content: "\201c";
+                position: absolute;
+                top: -25rem;
+                left: -8rem;
+                font-size: 50rem;
+                color: darkGrey;
+                font-family: sans-serif;
+                z-index: 1;
+                opacity: .3;
+}
+
+.quoteMarksEnd::after {
+                content: "\201d";
+                position: absolute;
+                top: -8rem;
+                left: 34rem;
+                font-size: 40rem;
+                color: lightGrey;
+                font-family: sans-serif;
+                z-index: 3;
+                opacity: .4;
+    
 }

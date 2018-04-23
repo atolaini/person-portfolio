@@ -122,6 +122,9 @@ $('a[href*="#"]')
     viewFactor: .2,
     opacity: 0
   })
+
+  
+  
  
 
 
