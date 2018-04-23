@@ -72,7 +72,7 @@ $('a[href*="#"]')
     duration: 1000,
     distance: '500px',
     opacity: 0,
-    easing: 'ease-out',
+    easing: 'cubic-bezier(0.175, 0.885, 0.32, 1.275)',
     reset: 'true'
   });
 
