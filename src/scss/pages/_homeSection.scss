@@ -12,10 +12,23 @@
          text-align: center;
      }
 
+     @include respond(phone) {
+         background-size: cover;
+         background-position: right;
+         background-attachment: initial;
+        
+        }
+
+
+
     &__content {
         margin-top: 5rem;
         color: white;
         position: relative;
+
+        @include respond(phone) {
+            margin-top: 10rem;
+        }
 
         
 
@@ -45,10 +58,7 @@
                 opacity: .3;
                 font-size: 50rem;
 
-                @include respond(tab-land) {
-                    margin-left: 2rem;
-                    padding-left: 2rem;
-                }
+                
 }
 
 .quoteMarksEnd::after {
@@ -62,5 +72,8 @@
                 z-index: 3;
                 opacity: .4;
 
-    
+                @include respond(phone) {
+                    left: 25rem;
+                }
+                 
 }
